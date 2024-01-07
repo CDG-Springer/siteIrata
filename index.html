@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script defer src="scrollanimation.js"></script>
+</head>
+<body>
+    
+    <nav>
+        <a href="/" class="logo">Logo</a>
+        <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+            <li><a href="/">Home</a></li>
+            <li><a href="#sobre-container">Sobre</a></li>
+            <li><a href="#bibliografia-container">Quem sou eu</a></li>
+            <li><a href="#certificados-container">Meus Certificados</a></li>
+        </ul>
+    </nav>
+    <script src="mobile.js"></script>
+
+    <section id="frontpage-container">
+        <div class="caroussel-frontpage">
+            <div class="slider-frontpage">
+                <img src="imagens/slides/1.png" id="section2"></img>
+                <img src="imagens/slides/2.png" id="section2"></img>
+                <img src="imagens/slides/3.png" id="section3"></img>
+                <img src="imagens/slides/4.png" id="section4"></img>
+                <img src="imagens/slides/5.png" id="section5"></img>
+                <img src="imagens/slides/6.png" id="section6"></img>
+                <img src="imagens/slides/7.png" id="section7"></img>
+                <img src="imagens/slides/8.png" id="section8"></img>
+                <img src="imagens/slides/9.png" id="section9"></img>
+                <img src="imagens/slides/10.png" id="section10"></img>
+
+            </div>
+
+            <div class="controls-frontpage">
+                <span class="arrow left"><i class="material-icons">chevron_left</i></span>
+                <span class="arrow right"><i class="material-icons">navigate_next    </i></span>
+            </div>
+        </div>
+        <script defer src="caroussel-frontpage.js"></script>
+    </section>
+
+    <section id="sobre-container">
+        
+        <div id="circle-container" class="esquerda">
+            <svg id="circulo" fill="#49577c" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="50" />
+            </svg>
+
+            <h1 class="hidden"><span style="color: white; font-weight: bold; opacity: 0.6;">So</span>bre</h1>
+        </div>
+
+    </section>
+
+    <div class="sobre-texto">
+        <div class="conteudo-sobre hidden">
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eaque harum dolor sint quibusdam, accusamus asperiores. Accusantium libero fuga cumque dolor voluptatum commodi iure temporibus placeat, id doloremque, enim incidunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur aspernatur nam modi, nemo atque officiis ipsam animi pariatur id quis, a, debitis temporibus minus. Quidem dicta ipsum deserunt ut labore. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, maiores ipsam! Quasi fugit ipsa nisi obcaecati mollitia veniam distinctio velit esse illum neque, dolorem magnam non, exercitationem rerum vel optio!</h4>
+        </div>
+        
+        <div class="container-sobre-foto">
+
+            <img class="foto-sobre hidden" src="https://media.discordapp.net/attachments/1097649289167118376/1161744894604349611/Imagem_do_WhatsApp_de_2023-10-06_as_18.21.38_9f6dbfa6.jpg?ex=65396a3f&is=6526f53f&hm=6346240322ac502e4b9dfa8945d3971fddd160e6dda3533d4fc51415b05e6c14&=&width=413&height=551" alt="">
+            
+        </div>
+
+        <details>
+            <p>teste</p>
+        </details>
+
+        <details>
+            <p>teste</p>
+        </details>
+
+        <details>
+            <p>teste</p>
+        </details>
+
+        <details>
+            <p>teste</p>
+        </details>
+
+        <details>
+            <p>teste</p>
+        </details>
+
+
+    </div>
+
+    <section id="bibliografia-container">
+        
+        
+
+    </section>
+
+    <section id="certificados-container">
+
+        <div id="certificados">
+            <div class="Titulo">
+                Minhas Certificações
+            </div>
+            <div class="conteudo">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis tincidunt tortor. Vivamus ullamcorper lorem nulla. Pellentesque eget ex in risus ultricies rhoncus a ullamcorper sapien. Donec feugiat fermentum odio ac euismod. In eget velit vel erat ornare tempus ultrices vel arcu.
+                
+                <div id="carousselContainer">
+                    <div class="caroussel-certificados" id="imgCaroussel">
+                        <img id="item" src="imagens/1.png" alt="">
+                        <img id="item" src="imagens/2.png" alt="">
+                        <img id="item" src="imagens/3.png" alt="">
+                        <img id="item" src="imagens/4.png" alt="">
+                    </div>
+                </div>
+                <script defer src="caroussel.js"></script>
+
+            </div>
+        </div>
+        
+    </section>
+
+</body>
+</html>
