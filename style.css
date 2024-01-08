@@ -144,11 +144,8 @@ a:hover{
     display: flex;
     background-color: #dfd9d7;
     flex-direction: column;
-    justify-content: center;
-}
-
-#sobreConteudo{
-    padding: 5rem 0 0 5rem;
+    align-items: center;
+    padding: 3rem 0 3rem 0;
 }
 
 #circle-container{
@@ -158,7 +155,7 @@ a:hover{
 }
 
 #sobre-container #circulo{
-    width: 10rem;
+    max-width: 8rem;
 }
 
 .textoCirculo{
@@ -169,30 +166,26 @@ a:hover{
     color: black;
 }
 
-.sobre-texto{
-    padding: 5rem;
+#sobreBloco{
+    width: 90%;
+}
+
+.sobreConteudo{
+    padding: 2rem 0 2rem;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.conteudo-sobre{
-    display: flex;
-    /* align-items: center; */
-    max-width: 50rem;
-    font-size: 1.5rem;
+.textoSobre{
+    width: 50rem;
 }
 
-.container-sobre-foto{
-    display: flex;
-    justify-content: end;
-    margin-right: 10%;
-}
-
-.foto-sobre{
-    width: 20rem;
-    min-width: 20rem;
+.primeiraImgSobre{
     border-radius: 3%;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
 }
 
 details{
@@ -203,23 +196,9 @@ details{
     cursor: pointer;
 }
 
-#bibliografia-container{
-    
-}
-
-#certificados-container{
-
-}
-
 @media (max-width: 999px) {
 
-    #sobreConteudo{
-        padding: 2rem 0 0 1rem;
-    }
-
-    .sobre-texto{
-        padding: 0;
-    }
+    
 
     body{
         overflow-x: hidden;
