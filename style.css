@@ -89,7 +89,7 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('https://cdn.discordapp.com/attachments/1097649289167118376/1193970938690154537/Untitled-1.png?ex=65aea716&is=659c3216&hm=c5df78e67f490a026d056fc5bcdc3482591b959f3720e32eb55eaa07368c169f&');
+    background-image: url('imagens/background.png');
     background-size: cover;
 }
 
@@ -215,6 +215,11 @@ details{
     cursor: pointer;
 }
 
+details > summary{
+    font-weight: 501;
+    color: white;
+}
+
 .divisaoTriangulo{
     clip-path: polygon(100% 0, 0 0, 50% 63%);
     background-color: #dfd9d7;
@@ -234,8 +239,8 @@ details{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    row-gap: 2rem;
-    column-gap: 3%;
+    row-gap: 1.5rem;
+    column-gap: 2%;
     flex-wrap: wrap;
 }
 
@@ -247,7 +252,7 @@ details{
 }
 
 .certificadoImg, .nomeCertificado, .dadosCertificado{
-    width: 10rem;
+    width: 7.5rem;
     transition: 0.2s;
 }
 
@@ -264,11 +269,16 @@ details{
 .botaoCertificado{
     padding: 10px;
     color: white;
-    font-weight: 600;
+    font-size: 0.7rem;
+    font-weight: bold;
     border: none;
     background: rgb(243, 68, 68);
     cursor: pointer;
     transition: 0.2s;
+}
+
+.botaoCertificado:hover{
+    background: rgb(247, 108, 108);
 }
 
 .certificado p{
@@ -316,10 +326,27 @@ dialog img{
     display: flex;
 }
 
+.carousselDialogContainer{
+    flex-shrink: 0;
+    width: 30rem;
+}
+
+@media (max-width: 1315px){
+    .dialogBloco{
+        flex-wrap: wrap;
+    }
+
+    .dialogBloco{
+        flex-direction: column-reverse
+    }
+
+    .carousselDialogContainer{
+        background-color: red;
+    }
+}
+
 .certificadoImagem{
-    -webkit-box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.41);
-    -moz-box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.41);
-    box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.41);
+    width: 100%;
 }
 
 .conteudoDialog{
@@ -338,14 +365,39 @@ dialog img{
     font-weight: bold;
 }
 
-.textoDialog{
-
-}
-
 .dialogClose{    
     color: white;
     cursor: pointer;
     font-weight: bold;
+}
+
+#colaboracoesContainer{
+    padding: 2rem 0;
+    background-color: #dfd9d7;
+    display: flex;
+    justify-content: center;
+}
+
+#colaboracoesBloco{
+    display: flex;
+    align-items: center;
+    row-gap: 3rem;
+    flex-direction: column;
+    width: 90%;
+}
+
+.tituloColaboracoes{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#colaboracoesFlex{
+    
+}
+
+#colaboracoesFlex img{
+    width: 8rem;
+    height: 6rem;
 }
 
 
